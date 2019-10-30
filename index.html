@@ -1,26 +1,82 @@
 <!doctype html>
-<html class="" lang="en">
-
+<html lang="en">
   <head>
     <meta charset="utf-8">
-
-    <title>Week 5, Part 2</title>
-
-    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+    <title>Generate a Silly Story</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">#Silly</a>
+    <form class="form-inline my-2 my-lg-0">
+      <span id="displayDate"></span>
+    </form>
+    </nav>
+<main role="main">
+  <div class="jumbotron">
+      <div class="container flex-container">
+        <h1 class="display-4">Generate a Silly Story</h1>
+        <div class="jumboFlex">
+        <div class="col-md-4 vertP">Provide a custom name and a verb in past tense. Further customize your story with your location, and whether you're a cat person or a dog person and we'll create a silly story just for you. </div>
+        <div class="col-md-4 story"></div>
+        <div class="col-md-4"><img id="imageURL" src="images/blank.png" height="210px"></div>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 bottomSpace">
+          <h2>1.  Customize with name and verb</h2>
+          <div>
+            <label for="customname">Enter custom name:</label>
+            <input id="customname" type="text" placeholder="">
+          </div>
+          <div>
+            <label for="customverb">Enter a verb, past tense:</label>
+            <input id="customverb" type="text" placeholder="">
+          </div>
+        </div>
+        <div class="col-md-4 bottomSpace leftBorder">
+          <h2>2.  Refine further</h2>
+          <div>
+            <input id="us" type="radio" name="ukus" value="us" checked><label class="spaceOut" for="us">US Location</label>
+            <input class="gimme" id="uk" type="radio" name="ukus" value="uk"><label class="spaceOut" for="uk">UK Location</label>
+          </div>
+          <div>
+            <input id="cat" type="radio" name="catdog" value="cat" checked><label class="spaceOut" for="cat">Cat Person</label>
+            <input class="gimme" id="dog" type="radio" name="catdog" value="dog"><label class="spaceOut" for="dog">Dog Person</label>
+          </div>
+        </div>
+        <div class="col-md-4 bottomSpace leftBorder">
+          <h2>3. Go!</h2>
+          <div>
+            <button class="randomize">Generate a silly story</button>
+          </div>
+        </div>
 
-    <h1>Week 5, Part 2</h1>
+      </div>
 
-	</body>
+      <hr>
+
+    </div> <!-- /container -->
+
+  </main>
+
+
+    <footer class="container">
+      <p>&copy; Random Stuff, LLC</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    </body>
 
 </html>

@@ -1,0 +1,86 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #ebfaf8; }
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem; } }
+
+.jumbotron {
+  padding-bottom: 1.5rem;
+  line-height: 1.5rem;
+  background-image: url(../images/blue-tint.png);
+  background-size: cover;
+  color: #fff; }
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 1.5rem; }
+
+.bottomSpace {
+  margin-bottom: 15px; }
+
+hr {
+  margin: 40px 0px 30px; }
+
+#imageURL {
+  margin: 0 0 0 30px; }
+
+#customname {
+  margin-left: 30px; }
+
+.randomize {
+  background-color: #FFC125;
+  padding: 6px;
+  border-radius: 7px; }
+
+.spaceOut {
+  margin-left: 5px; }
+
+.gimme {
+  margin-left: 17px; }
+
+span {
+  color: #fff;
+  padding-left: 40px; }
+
+input[type="text"] {
+  padding: 2px 5px 2px 8px;
+  width: 150px;
+  border-color: #FFC125;
+  border-width: 2px;
+  border-radius: 2px; }
+
+.leftBorder {
+  border-width: 0 0 0 1px;
+  border-style: solid;
+  border-color: #666;
+  padding-left: 40px; }
+
+.story {
+  background: #FFC125;
+  color: #5E2612;
+  padding: 10px;
+  visibility: hidden;
+  border-radius: 5px;
+  border-color: #333;
+  height: 90%; }
+
+.vertP {
+  line-height: 2rem; }
+
+.jumboFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center; }
