@@ -19,7 +19,6 @@ var insertY = ['The Hundred Acre Wood', 'the mall', 'Hill Valley'];
 var insertZ = ['gave high-fives', 'played Blackjack', 'started breakdancing'];
 var insertA = ['drive', 'frozen yogurt', 'haircut'];
 var insertB = ['impressed', 'scared', 'having it'];
-var animalImage = ['../images/blank.png','../images/cat-tilt.png', '../images/dog-tilt.png'];
 
 randomize.addEventListener('click', result);
 
@@ -56,9 +55,9 @@ function result() {
   }
 
   if(document.getElementById("cat").checked) {
-    document.getElementById('imageURL').src='../images/cat-tilt.png'
+    document.getElementById('imageURL').src='/images/cat-tilt.png'
   } else if (document.getElementById("dog").checked) {
-    document.getElementById('imageURL').src='../images/dog-tilt.png';
+    document.getElementById('imageURL').src='/images/dog-tilt.png';
   }
 
   story.textContent = newStory;
